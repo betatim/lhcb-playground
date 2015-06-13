@@ -1,0 +1,15 @@
+<!doctype html>
+<title>Gist Contents</title>
+
+<h1>Content of this gist</h1>
+
+{{ gist_id }}
+
+{% for file in files %}
+
+ <h2>{{ file.name }}</h2>
+ <pre>
+{{ file.content }}
+ </pre>
+
+{% end %}
